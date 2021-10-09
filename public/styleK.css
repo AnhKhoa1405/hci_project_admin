@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.body {
+  width: 300px;
+  height: 100vh;
+  background-color: #cccccc;
+  position: fixed;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.pitchOfMe {
+  margin-left: 300px;
+  width: 90% - 300px;
+  text-align: center;
+}
+
+.menu-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #3ac5c9;
+  font-weight: 700;
+}
+
+.body ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+.body ul li {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 10px 0 10px 10px;
+}
+
+.item-menu.active {
+  background-color: #3ac5c9;
+  color: red;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.pitchOfMe h1 {
+  color: #3ac5c9;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.itemPitch {
+  width: 300px;
+  height: 300px;
+  margin-left: 25px;
+  margin-top: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemPitch:hover {
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.itemPitchInfo {
+  flex: 1.3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("https://24hthongtin.com/img_data/images/San-bong-da-11-nguoi-co-kich-thuoc-tieu-chuan-quoc-te-la-bao-nhieu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.bg-item {
+  background-image: url("https://danviet.mediacdn.vn/upload/3-2019/images/2019-08-16/6-1565952366-width800height532.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.itemPitchInfo p,
+.itemPitchInfo h3 {
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+}
+
+.itemPitchDescription {
+  flex: 2;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.itemPitchChoose {
+  flex: 0.7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.itemPitchDescription a {
+  float: left;
+}
+.itemPitchDescription p {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.itemPitchDescription p,
+.itemPitchDescription a {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.img-avatar {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: -35px;
+  border: 1px solid #ccc;
+  background-image: url("https://scontent.fsgn5-10.fna.fbcdn.net/v/t1.6435-9/51940904_1061209580718389_868075279216541696_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=7kFWiQuH4xUAX_Rr-te&_nc_ht=scontent.fsgn5-10.fna&oh=c19c1b10a4232358c1c07aadb8d6487d&oe=6186382D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.itemPitchChoose img {
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
