@@ -10,12 +10,19 @@
   position: fixed;
 }
 
-.content {
+.content,
+.managePitch {
   width: 100vw;
   height: 100vh;
 }
 
-.pitchOfMe {
+.content {
+  display: none;
+}
+
+.pitchOfMe,
+.eachPitch,
+.editPitch {
   margin-left: 300px;
   width: 90% - 300px;
   text-align: center;
@@ -49,11 +56,12 @@
   font-weight: 700;
 }
 
-.pitchOfMe h1 {
+.pitchOfMe h1,
+.eachPitch h1 {
   color: #3ac5c9;
   font-size: 48px;
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .itemPitch {
@@ -145,4 +153,101 @@
   margin-top: 15px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.editPitch {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.desName {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.desName p,
+.childrenPitchTittle {
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.desName input {
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.childPitch {
+  width: 80%;
+  margin: 30px auto;
+  border: 1px solid #3ac5c9;
+}
+
+.active {
+  border: none;
+  outline: none;
+
+  width: 700;
+}
+
+.childImg img {
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+}
+
+.childPitch {
+  display: flex;
+}
+.manager {
+  padding: 10px 0;
+}
+
+.childManage {
+  display: flex;
+  align-items: baseline;
+}
+
+.childManage input,
+.childManage select {
+  padding: 3px 5px;
+}
+
+.childManage input {
+  font-size: 16px;
+}
+
+.childManage p {
+  margin-right: 5px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.sale {
+  border: 1px solid black;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.sale:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+.btnAction {
+  text-align: center;
+}
+
+.btnAction button {
+  width: 80px;
+  height: 40px;
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+.btnAction button:first-child {
+  background-color: red;
+  border: 1px solid black;
+  color: white;
 }
